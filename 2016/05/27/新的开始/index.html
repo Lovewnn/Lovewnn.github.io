@@ -434,6 +434,14 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -729,6 +737,24 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -864,17 +890,17 @@
       function renderGitment(){
         var gitment = new Gitmint({
             id: window.location.pathname,
-            owner: 'guojunfei1993# MUST HAVE, Your Github Username',
-            repo: 'Gitment# MUST HAVE, The name of the repo you use to store Gitment comments',
+            owner: 'guojunfei1993',
+            repo: 'Gitment',
             
             lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
             oauth: {
             
             
-                client_secret: '1853eb362e0d61ffe0197d1bf081ba5d7ca21a56# EITHER this or proxy_gateway, Github access secret token for the Gitment',
+                client_secret: 'e3fcf7e309aaf71ec5e00f18356867e2c7673483',
             
-                client_id: '7dc5ab89c0e758e7977a# MUST HAVE, Github client id for the Gitment'
+                client_id: '80994349bd3bf35a279d'
             }});
         gitment.render('gitment-container');
       }
