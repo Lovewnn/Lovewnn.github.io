@@ -110,13 +110,14 @@
 
   <meta name="description" content="Guojf‘s blog">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Learning makes me happy">
-<meta property="og:url" content="http://yoursite.com/categories/tools/blog/index.html">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="Learning makes me happy">
 <meta property="og:description" content="Guojf‘s blog">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-04T07:12:10.320Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Learning makes me happy">
+<meta name="twitter:title" content="tags">
 <meta name="twitter:description" content="Guojf‘s blog">
 
 
@@ -124,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/tools/blog/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/"/>
 
 
 
@@ -134,7 +135,7 @@
   };
 </script>
 
-  <title>分类: blog | Learning makes me happy</title>
+  <title>tags | Learning makes me happy</title>
   
 
 
@@ -181,7 +182,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,7 +235,7 @@
         
         
           
-          <li class="menu-item menu-item-tags">
+          <li class="menu-item menu-item-tags menu-item-active">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
   </li>
@@ -242,7 +243,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
   </li>
@@ -329,59 +330,82 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>blog<small>分类</small>
-        </h1>
-      </div>
+<h1 class="post-title" itemprop="name headline">tags</h1>
+
+<div class="post-meta">
+  
+  
+
+
+
+</div>
+
+</header>
 
       
+      
+      
+      <div class="post-body">
         
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/06/01/使用Github和Hexo搭建博客/" itemprop="url">
-              
-                <span itemprop="name">使用Github和Hexo搭建博客</span>
-              
-            </a>
+          <div class="tag-cloud">
+            <div class="tag-cloud-title">
+                
+                
+                  
+                    
+                  
+                
+                  
+                    
+                  
+                
+                  
+                    
+                  
+                
+                目前共计 3 个标签
+            </div>
+            <div class="tag-cloud-tags">
+              <a href="/tags/GitHub/" style="font-size: 12px; color: #ccc">GitHub</a> <a href="/tags/Hexo/" style="font-size: 12px; color: #ccc">Hexo</a> <a href="/tags/开始/" style="font-size: 12px; color: #ccc">开始</a>
+            </div>
+          </div>
         
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-01T17:25:39+08:00"
-              content="2018-06-01" >
-          06-01
-        </time>
       </div>
-
-    </header>
-  </article>
-
-
+      
+      
       
     </div>
+    
 
+
+
+    
+    
+    
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -645,6 +669,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
 
   
 
@@ -686,6 +714,30 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: '<%= page.date %>',
+            owner: 'guojunfei1993',
+            repo: 'Gitment',
+            
+            lang: "zh-CN# Force language, or auto switch by theme" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'e3fcf7e309aaf71ec5e00f18356867e2c7673483',
+            
+                client_id: '80994349bd3bf35a279d'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
